@@ -11,4 +11,8 @@ class BusTest < MiniTest::Test
     assert_equal("Vroom", @bus.drive())
   end
 
+  def test_check_number_of_passengers()
+assert_equal(0, @bus.check_number_of_passengers())
+  end
+
 end
