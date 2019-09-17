@@ -15,4 +15,17 @@ class Bus
   def check_number_of_passengers()
     return @passengers.count
   end
+
+  def pick_up(passenger)
+    @passengers.push(passenger)
+  end
+
+  def drop_off(passenger)
+    @passengers.delete(passenger)
+  end
+
+  def remove_all_passengers
+    @passengers.clear()
+  end
+
 end
