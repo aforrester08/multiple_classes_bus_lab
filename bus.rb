@@ -28,4 +28,12 @@ class Bus
     @passengers.clear()
   end
 
+  def pick_up_from_stop(stop)
+    queue = stop.queue
+    for person in queue
+      @passengers.push(person)
+    end
+    stop.queue.clear
+  end
+
 end
